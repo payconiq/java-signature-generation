@@ -1,0 +1,3 @@
+In order to secure the transfer of all transactions, a symmetric signature is generated on Payconiq’s servers and the merchant’s backend. Once generated on both sides, the signature is send to Payconiq to validate the transaction request. Only when both sides recognize the same symmetric signature, a transaction will be considered as valid and will be processed. As we need to generate this key on both sides, secret information needs to be shared between them.
+
+The reason why the secretKey is in the backend is because it needs to be hidden. It can’t be easily accessible. When the user navigates to the buying page, the signature needs to be calculated and transferred to the frontend. Both functions (base64 and sha256) are available in almost every development environment.
