@@ -1,4 +1,4 @@
-istages:
+stages:
   - remote
 
 image: registry.acc.payconiq.io/debian-payconiq:0.0.14
